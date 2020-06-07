@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding:8px;
+    width: 150px;border:none;
+    outline:none;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.clr {
+    clear: both;
+}
+
+.logo-color {
+    color: rgb(235, 33, 33);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    position: relative;
+    background: url(img2.jpg) no-repeat center/cover;
+}
+
+/* visibility - body-inner */
+
+.body-inner {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navigation section begins here */
+
+.logoNav {
+    min-height: 100px;background:#000;
+    color:#fff;border-bottom: 3px solid orangered;
+    opacity: 0.8;
+}
+
+.logoNav h1 {
+    float: left;
+}
+
+.logoNav h1.logo {
+    font-size: 1.5em;
+    background-color: rgb(235, 33, 33);
+    margin: 10px 10px 10px 100px;
+    padding:4px 17px;
+    border-radius: 50px;
+    margin-top: 19px;
+}
+
+.logoNav h1.description {
+    line-height: 0.8;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.small {
+    font-weight: normal;
+    font-size: 0.5em;
+}
+
+.logoNav nav {
+    float:right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.logoNav nav ul {list-style: none;}
+
+.logoNav nav ul li {
+    float: left;
+    padding: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* links - home, projects, contact */
+
+.logoNav nav ul li a {
+    text-decoration: none;
+    color:#fff;
+    transition: 500ms ease-in-out;
+}
+
+.logoNav nav ul li a:hover {
+    border-bottom: 2px solid orangered;
+    padding-bottom: 15px;
+    color: orange;
+}
+
+/* .logonav section ends here..... */
+
+/* showcase section begins here */
+
+section#showcase {
+    padding: 130px 0px 0px 100px;
+    color:#fff;
+}
+
+section#showcase h1 {
+    font-size: 3.2em;
+    font-weight: 900;
+    margin: 0px 0px 30px 0px;
+    opacity: 0.8;
+}
+
+section#showcase p {
+    margin-bottom: 30px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+/* buttons */
+
+#website {
+    background-color: orangered;
+    color:#fff; margin-right: 10px;
+}
+
+#hire {
+    background-color: rgba(255,255,255,0.6);
+}
+
+/* button id mail - to open email program */
+
+button#mail {
+    width:100px;
+    position: absolute;
+    top:85%;
+    right: 100px;
+    background: orangered;
+    color:#fff;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+
+/* media queries - responsive design */
+
+@media(max-width: 500px){
+    body {
+        line-height: 1.0;
+        margin:0;
+        padding:0;
+    }
+    /* hide logo */
+    .logoNav h1.logo {display: none;}
+    .small {display: none;}
+    .logoNav h1.description {
+        float: none;
+        font-size: 1.5em; text-align: center;
+        margin:10px 0px 0px 0px;
+    }
+    .logoNav nav ul li {
+        padding:10px;
+    }
+    .logoNav nav {
+        float: none;
+        margin:0;
+        position: absolute;
+        top:7%;
+        left: 18%;
+    }
+
+    /* showcase */
+
+    section#showcase {
+        padding:200px 0px 0px 20px;
+        margin-left:0;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    section#showcase h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section#showcase p .logo-color {
+        color:yellow;
+    }
+
+    section#showcase p {
+        font-family: 'Roboto';
+        text-align: center;
+        font-weight: normal;
+        padding: 0px 20px 0px 20px;
+        color:yellow;
+        opacity: 0.4;
+    }
+
+    /* buttons */
+
+    #website, #hire {
+        display: block;
+        margin: 10px 0px 10px 90px;
+    }
+
+    button#mail {
+     right:125px; 
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

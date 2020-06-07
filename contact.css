@@ -1,0 +1,89 @@
+@import 'style.css';
+@import 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css';
+
+body {
+    color:#fff;
+}
+
+.container {
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid orangered;
+}
+
+/* contact showcase section */
+
+
+section#showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#showcase .icon i {
+    margin: 0px 20px 0px 20px;
+}
+
+/* customizing icons */
+
+section#showcase .icon i[class="fab fa-whatsapp fa-6x"]{
+    color:green;
+}
+
+section#showcase .icon i[class="fab fa-facebook fa-6x"]{
+    color:blue;
+}
+
+section#showcase .text button {
+    display: block;
+    margin: 10px;
+    width:200px;
+    padding:10px;
+}
+
+/* customizing buttons */
+
+section#showcase a {
+    text-decoration: none;
+}
+
+section#showcase .text a[href="https://wa.me/254700803670"] button{
+    background:green;
+    color:#ccc;
+}
+
+section#showcase .text a[href="https://facebook.com/kenneth.hagins96"] button{
+    background:blue;
+    color:#ccc;
+}
+
+/* body inner bg customization */
+
+.body-inner {
+    background: rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
